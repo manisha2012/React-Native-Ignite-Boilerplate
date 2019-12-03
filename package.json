@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "npx jetify",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "clean": "rm -rf $TMPDIR/react-* && watchman watch-del-all && npm cache clean --force",
@@ -69,6 +70,7 @@
     "ignite-standard": "1.0.0",
     "ignite-vector-icons": "1.1.1",
     "jest": "^24.9.0",
+    "jetifier": "^1.6.5",
     "metro-react-native-babel-preset": "^0.57.0",
     "mockery": "2.1.0",
     "react-devtools-core": "3.6.3",
